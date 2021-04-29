@@ -28,7 +28,7 @@ jobs:
 
 
       - name: create secret file
-        run: echo ${{secret.secret1}} >> /tmp/secret_file && echo ${{secret.secret2}} >> /tmp/secret_file
+        run: echo "first secret = ${{secrets.SECRET1}}" >> /tmp/secret_file && echo ${{secrets.SECRET2}} >> /tmp/secret_file
 
 
       - name: Install SSH Key
