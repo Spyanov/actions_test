@@ -30,7 +30,7 @@ jobs:
         run: echo "db_user = ${{secrets.SECRET1}}" >> /tmp/secret_file && echo "db_name = ${{secrets.SECRET2}}" >> /tmp/secret_file
       
       - name: echo 
-        run: echo ${{VERS_TAG}}
+        run: echo ${{env.VERS_TAG}}
 
 
 
